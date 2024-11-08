@@ -140,10 +140,10 @@ func (s *S3Service) ResizeBytesImage(file io.Reader, filePath string, height uin
 
 func (s *S3Service) getOriginalPath(path string) string {
 
-	var extension = filepath.Ext(path)
-	if extension == ".webp" {
-		return path[0 : len(path)-len(extension)]
-	}
+	//var extension = filepath.Ext(path)
+	//if extension == ".webp" {
+	//	return path[0 : len(path)-len(extension)]
+	//}
 
 	return path
 }
